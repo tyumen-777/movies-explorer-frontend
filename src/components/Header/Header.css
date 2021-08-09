@@ -1,0 +1,90 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+.header__logo {
+  height: 38px;
+  width: 38px;
+  margin: 18px 0;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  align-items: center;
+}
+
+.header__registration-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 30px;
+}
+
+.header__login-button {
+  width: 76px;
+  height: 32px;
+  background-color: #3456F3;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 1280px) {
+  .header__container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    padding: 0 30px;
+  }
+
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__wrapper_burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__container {
+    padding: 0 14px;
+  }
+
+  .header__sign-text {
+    font-size: 10px;
+  }
+
+  .header__sign-text_color_white {
+    margin-right: 14px;
+  }
+
+  .header__btn-signin {
+    width: 54px;
+    height: 26px;
+  }
+
+  .header__burger-menu-wrap {
+    width: 100%;
+  }
+}
