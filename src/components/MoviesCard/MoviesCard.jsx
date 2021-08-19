@@ -17,10 +17,11 @@ function MoviesCard(props) {
       <div className="card__description">
         <p className="card__name">33 слова о дизайне</p>
         <p className="card__duration">1ч 17м</p>
+        <img className="card__icon" src={cardIcon} alt="Тестовая иконка" />
       </div>
       <div className="card__wrap">
         <img className="card__image" src={testCard} alt="Тестовая карточка" />
-        <img className="card__icon" src={cardIcon} alt="Тестовая иконка" />
+
       </div>
     </li>
   );
