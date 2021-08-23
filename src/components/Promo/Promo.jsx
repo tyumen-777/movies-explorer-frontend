@@ -2,8 +2,6 @@ import React from 'react';
 import './Promo.css';
 import NavTab from "../NavTab/NavTab";
 
-// TODO: доделать адаптивную верстку
-
 function Promo() {
   return (
     <section className='promo'>

@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css'
-import { Link, useLocation } from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import logo from '../../images/header__logo.svg'
 import Navigation from "../Navigation/Navigation";
 
 function Header() {
-  const { pathname } = useLocation();
+  const {pathname} = useLocation();
   const text = `${pathname === "/" ? "Регистрация" : "Аккаунт"}`;
 
   const [activeBurger, setActiveBurger] = React.useState(false);
@@ -13,12 +13,13 @@ function Header() {
   function handleActiveBurger() {
     setActiveBurger(!activeBurger);
   }
+
   return (
     <header className='header'>
       <div className="header__container">
         <div className="header__wrapper">
-          <Link to="/"><img className="header__logo" src={logo} alt="Логотип" /></Link>
-          {pathname === "/" ? ( "" ) : <Navigation />}
+          <Link to="/"><img className="header__logo" src={logo} alt="Логотип"/></Link>
+          {pathname === "/" ? ("") : <Navigation/>}
         </div>
         <div className={`header__wrapper ${pathname === "/" ? "" : "header__wrapper_burger"}`}>
           <Link
@@ -32,17 +33,19 @@ function Header() {
               Войти
             </Link>
           ) : (
-            <button className="header__btn-account" type="button" />
+            <button className="header__btn-account" type="button"/>
           )}
         </div>
         {pathname === "/" ? '' : (
           <>
-            <div className={`header__burger ${activeBurger ? 'header__burger_active' : ''}`} onClick={handleActiveBurger}>
-              <div className="header__burger-line" />
-              <div className="header__burger-line" />
-              <div className="header__burger-line" />
+            <div className={`header__burger ${activeBurger ? 'header__burger_active' : ''}`}
+                 onClick={handleActiveBurger}>
+              <div className="header__burger-line"/>
+              <div className="header__burger-line"/>
+              <div className="header__burger-line"/>
             </div>
-            <div className={`header__burger-menu-wrap ${activeBurger ? 'header__burger-menu-wrap_active' : ''}`} onClick={handleActiveBurger}>
+            <div className={`header__burger-menu-wrap ${activeBurger ? 'header__burger-menu-wrap_active' : ''}`}
+                 onClick={handleActiveBurger}>
               <nav className="header__burger-nav">
                 <ul className="header__burger-list">
                   <li className="header__burger-item">
@@ -56,7 +59,8 @@ function Header() {
                   </li>
                 </ul>
               </nav>
-              <div className={`header__wrapper header__wrapper_burger-menu ${pathname === "/" ? "header__wrapper_burger" : ""}`}>
+              <div
+                className={`header__wrapper header__wrapper_burger-menu ${pathname === "/" ? "header__wrapper_burger" : ""}`}>
                 <Link
                   className='header__sign-text'
                   to={`${pathname === "/" ? "/signup" : "/profile"}`}
@@ -68,7 +72,7 @@ function Header() {
                     Войти
                   </Link>
                 ) : (
-                  <button className="header__btn-account" type="button" />
+                  <button className="header__btn-account" type="button"/>
                 )}
               </div>
             </div>
