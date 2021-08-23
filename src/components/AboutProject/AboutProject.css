@@ -39,8 +39,8 @@
   margin-top: 70px;
 }
 
-.about__text-wrapper {
-
+.about__text-wrapper:first-of-type {
+margin-right: 5px;
 }
 
 .about__text {
@@ -100,6 +100,7 @@
 
 .about__duration_back-end {
   background-color: #3456F3;
+  color: white;
 }
 
 .about__duration_front-end {
@@ -117,7 +118,7 @@
 
 @media screen and (max-width: 1024px) {
   .about__container {
-    padding: 90px 0 90px;
+    padding: 90px 10px 90px;
   }
 
   .about__text-wrap {
@@ -183,7 +184,10 @@
     line-height: 22px;
     padding-bottom: 28px;
   }
-
+  .about__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
 
   .about__text-title {
