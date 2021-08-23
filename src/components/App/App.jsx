@@ -25,9 +25,9 @@ function App() {
           <Footer/>
         </Route>
         <Route path="/saved-movies" exact>
-          <Header />
-          <Movies />
-          <Footer />
+          <Header/>
+          <Movies/>
+          <Footer/>
         </Route>
         <Route exact path='/profile'>
           <Header/>
@@ -37,10 +37,10 @@ function App() {
           <Login/>
         </Route>
         <Route path="/signup" exact>
-          <Register />
+          <Register/>
         </Route>
         <Route path="*">
-          <NotFound />
+          <NotFound/>
         </Route>
       </Switch>
     </div>
