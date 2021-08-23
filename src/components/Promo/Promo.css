@@ -51,10 +51,10 @@
     margin-bottom: 212px;
   }
   .promo__container {
-    max-width: 292px;
+    max-width: 100%;
   }
   .promo__wrapper {
-    max-width: 292px;
+    max-width: 96%;
   }
 }
 
